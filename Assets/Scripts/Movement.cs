@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class Mdovement : MonoBehaviour
 {
     private Rigidbody rb;
     public float speed = 4.0f;
