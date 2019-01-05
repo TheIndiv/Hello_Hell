@@ -10,14 +10,13 @@ public class Shotgun : MonoBehaviour
 	public int howManyBullets = 8;
 	private List<Quaternion> bullets;
 	public int spreadAngle;
-	private GameObject projectile;
+	public  GameObject projectile;
 	
 	private bool shoot = false;
 	public float timerAnimation = 0;
 	private float timerShoot;
 	private bool shot = true;
 	void Start () {
-		projectile = GameObject.Find("Pocisk");
 		bullets = new List<Quaternion>(howManyBullets);
         anim = GetComponent<Animator>();
 		for (int i = 0; i < howManyBullets; i++)
